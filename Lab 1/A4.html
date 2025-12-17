@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        a = 0, b = 1;
+        ans = 0;
+        n = parseInt(prompt("enter the number of terms"));
+        if (n == 0) {
+            document.writeln("series is empty");
+        } else if (n == 1) {
+            document.writeln(a);
+        }
+        else if (n == 2) {
+            document.write(a, ",", b);
+        }
+        else{
+        document.write(a, ",", b);
+        ans = a + b;
+        for (i = 0; i < n - 2; i++) {
+            ans = a + b;
+            document.write(",",ans);
+            a = b;
+            b = ans;
+        }
+    }
+    </script>
+</body>
+
+</html>

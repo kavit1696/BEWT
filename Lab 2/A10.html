@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="mousemsg">Click</button>
+    <span id="sp"></span>
+    <script>
+         document.getElementById("mousemsg").addEventListener("contextmenu",(e)=>{
+            e.preventDefault()
+        })
+         document.getElementById("mousemsg").addEventListener("mousedown",(e)=>{
+            if(e.button==0){
+            sp.innerHTML="LEFT CLICK";
+            }
+           if(e.button==2){
+            sp.innerHTML="RIGHT CLICK";
+           }
+        })
+    </script>
+</body>
+</html>

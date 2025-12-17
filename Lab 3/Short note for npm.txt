@@ -1,0 +1,3 @@
+package.json is the main file of a Node.js project.it stores project required packages. It helps to manage dependencies and run the project using npm commands.
+package.json contains the name, version, scripts, and dependencies of a project. It is used for managing Node.js applications easily.
+It is automatically created using the command npm init.
