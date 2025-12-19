@@ -1,0 +1,11 @@
+git  init
+
+git add . 
+
+git commit -m "my notes"
+
+git remote origin "url of repo"
+
+git branch -m main
+
+git push -u origin main
